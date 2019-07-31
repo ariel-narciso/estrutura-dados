@@ -1,5 +1,12 @@
 #include "abb.h"
 
+struct tpNo {
+		
+	Item item;
+	struct tpNo *esquerda;
+	struct tpNo *direita;
+};
+
 ABB initABB(void) {
 	return NULL;
 }

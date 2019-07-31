@@ -1,16 +1,16 @@
 /********************************************************************
  * Este arquivo implementa um item do tipo Aluno.
- * Nesta implementação um aluno possui dois campos: matrícula e nome.
- * A estrutura de um Aluno está definida no arquivo Item.h.
+ * Nesta implementaï¿½ï¿½o um aluno possui dois campos: matrï¿½cula e nome.
+ * A estrutura de um Aluno estï¿½ definida no arquivo Item.h.
  */
 
 #include "item.h"
 
 //-----------------------------------------------------------------------------
 /**
- * @param n = nome do aluno até 30 caracteres;
+ * @param n = nome do aluno atï¿½ 30 caracteres;
  * @param m = natural indicando a matricula do aluno;
- * @return Um tipo Item preenchido com nome=n e matrícula=m;
+ * @return Um tipo Item preenchido com nome=n e matrï¿½cula=m;
  */
 Item setItem(char n[], unsigned int m){
     Item al;
@@ -21,7 +21,7 @@ Item setItem(char n[], unsigned int m){
 
 int isItem(Item *item, void *id) {
 
-    if (item == NULL || *((unsigned int *)id) != item->matricula)
+    if (item == NULL || id == NULL || *((unsigned int *)id) != item->matricula)
         return (0);
 
     return (1);
@@ -46,7 +46,7 @@ int itemCmp(const Item *item1, const Item *item2) {
 
 //-----------------------------------------------------------------------------
 /**
- * Exibe no vídeo os dados de al.
+ * Exibe no vï¿½deo os dados de al.
  * @param al = um item com dados de um aluno;
  * @return
  */
